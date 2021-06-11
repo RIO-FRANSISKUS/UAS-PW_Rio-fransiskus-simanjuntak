@@ -1,0 +1,88 @@
+body{
+    min-height: 100vh;
+    background: black;
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec{
+    position: relative;
+    padding-bottom: 10%;
+    background: black;
+    padding-top: 50px;
+}
+.sec img{
+    position: absolute;
+    width : 100%;
+    height: 70%;
+}
+section img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 9;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: azure;
+}
+.sec p {
+    font-size: 1.2em;
+    color: azure;
+}
+.container .btn{
+    display: inline-block;
+    background-color: ivory;
+    padding: 0.5% 40%;
+    border-radius: 40px;
+    color: black;
+    font-size: 3em;
+    transform: translateY(50px);
+}
+.container a:hover{
+    color: wheat;
+}
+footer{
+    background: black ;
+    overflow-y: hidden;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.copyright{
+    margin-right: 72%;
+    margin-left: 30px;
+    color: azure;
+}
+.call .fab{
+    margin-right: 30px;
+}
+.call a{
+    color: azure;
+}
+.call a:hover{
+    color: wheat;
+}
+.judul, .sinopsis{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-40px);
+}
+.judul.muncul, .sinopsis.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
